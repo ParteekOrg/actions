@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      -  run: echo ${{ secrets.GITHUB_TOKEN }}
+      -  run: echo ${{ secrets.PTA }}
         # Run your benchmarks here...
 
         # Good example for a community action:
@@ -67,4 +67,4 @@ jobs:
           # and where to find the comparison JSON file
           comparison_json_file: "old_benchmark/benchmark.json"
           # pass the token as argument
-          token : ${{ secrets.GITHUB_TOKEN }}
+          token : ${{ secrets.PTA }}
