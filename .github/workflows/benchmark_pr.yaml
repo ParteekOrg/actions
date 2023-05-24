@@ -21,7 +21,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      -  run: echo ${{ secrets.PTA }}
+      -  run: echo ${{ secrets.MY_ORG_SECRET }}
+      
         # Run your benchmarks here...
 
         # Good example for a community action:
